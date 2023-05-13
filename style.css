@@ -1,7 +1,7 @@
 body{
     padding:1em;
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 40px;
+    padding-right: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -33,7 +33,10 @@ header{
     background-color:#cccaca52;
     border-color:transparent;
     border-radius: 2%;
-    padding:40px;
+    padding-left:20px;
+    padding-right:20px;
+    height: 614px;
+    width:871px;
 }
 
 .titre{
@@ -45,13 +48,13 @@ header{
 }
 
 .boxbox{
- border-style:solid;   
- margin:10px;
+    border-style:solid;   
+    margin:10px;
     background-color:white;
     border-color:transparent;
     border-radius: 5%;
     max-height: 200px;
-    max-width: 200px;
+    max-width: 250.33px;
     display:grid;
     grid-template-rows:130px 0.1fr 0.1fr 0.1fr;
     cursor:pointer;
@@ -63,19 +66,23 @@ header{
     background-color:white;
     border-color:transparent;
     border-radius: 5%;
-    max-height: 200px;
-    max-width: 400px;
+    max-height: 146px;
+    max-width: 369px;
     max-width: auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows:1fr 1fr 1fr;
     cursor:pointer;
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom:20px;
+
    }
 
 .hotelimg{
-    max-width:200px;
-    min-width:200px;
-    height: auto;
+    width:250.33px;
+    height:124px;
+    object-fit: cover;
     border-radius: 7%;
   
 }
@@ -87,22 +94,24 @@ header{
 }
 
 .box2{
-    display: grid;
+    display:grid;
     border-style:groove;
     background-color:#cccaca52;
     border-color:transparent;
     border-radius: 2%;
     grid-column-start:2;
     grid-row-start:1;
-    padding:40px;
     margin-left:40px;
-
+    padding-left:20px;
+    padding-right:20px;
+    height:614px;
+    width:492px;
 }
 
 .hotelimg2{
-    max-width:150px;
-    min-width:150px;
-    height: auto;
+    width:123px;
+    height:146px;
+    object-fit: cover;
     border-top-right-radius: 7%;
     border-top-left-radius: 7%;
     grid-row-start:1;
