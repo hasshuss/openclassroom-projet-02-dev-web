@@ -1,8 +1,11 @@
 body{
     padding:1em;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 230px;
+    margin-left: 230px;
+    font-family: 'Roboto', sans-serif;
+    max-width:1440px;
 }
 
 
@@ -17,7 +20,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 10fr 1fr;
-    padding:10px,10px,10px,10px;
+    padding: 10px 10px 10px 10px;
     }
 
 .tamer{
@@ -35,6 +38,7 @@ header{
     border-radius: 2%;
     padding-left:20px;
     padding-right:20px;
+    margin-right:20px;
     height: 614px;
     width:871px;
 }
@@ -68,13 +72,12 @@ header{
     border-radius: 5%;
     max-height: 146px;
     max-width: 369px;
-    max-width: auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows:1fr 1fr 1fr;
     cursor:pointer;
     margin-right:0px;
-    margin-left:0px;
+    margin-left:20px;
     margin-bottom:20px;
 
    }
@@ -119,9 +122,6 @@ header{
     grid-column-end:1;
     grid-row-end:3;
 }
-
-
-
 
 h3{
     margin-block-start: 3px;
@@ -208,10 +208,6 @@ h3{
     transition-duration: 1s;
 }
 
-
-
-
-
 .btn{
     margin-left:0;
 }
@@ -230,7 +226,10 @@ button{
     border-style:none;
     margin-left:0;
     border-left-width:20px;
+    cursor:pointer;
+    
 }
+
 
 .searchInput{
 width:200px;
@@ -253,3 +252,44 @@ margin:0;
     background-color: lightgrey;
 }
 
+.box3{
+    display:inline-block;
+}
+
+.boxbox3{
+    display:grid;
+    grid-template-rows:380px;
+    float:left;
+    
+    margin:30px;
+}
+
+.ActivityImg{
+width:297.5px;
+height:380px;
+object-fit: cover;
+border-style: hidden;
+    border-color:rgb(255, 255, 255);
+    border-radius:20px 20px 0px 0px;
+}
+
+.footer{
+    display:grid;
+    background-color:lightgrey;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.A_propos_footer{
+    grid-column-start:1;
+    list-style: none;
+}
+
+.Hebergements_footer{
+    grid-column-start:2;
+    list-style: none;
+}
+
+.Assistance_footer{
+    grid-column-start:3;
+    list-style: none;
+}
