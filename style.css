@@ -2,10 +2,10 @@ body{
     padding:1em;
     padding-left: 50px;
     padding-right: 50px;
-    margin-right: 230px;
-    margin-left: 230px;
     font-family: 'Roboto', sans-serif;
     max-width:1440px;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 
@@ -13,7 +13,7 @@ body{
     list-style: none;
     display : grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color:blue;
+    color:#0065FC;
     column-gap:2em;    
 }
     
@@ -38,7 +38,6 @@ header{
     border-radius: 2%;
     padding-left:20px;
     padding-right:20px;
-    margin-right:20px;
     height: 614px;
     width:871px;
 }
@@ -56,12 +55,15 @@ header{
     margin:10px;
     background-color:white;
     border-color:transparent;
-    border-radius: 5%;
     max-height: 200px;
     max-width: 250.33px;
     display:grid;
     grid-template-rows:130px 0.1fr 0.1fr 0.1fr;
     cursor:pointer;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
 
@@ -69,31 +71,34 @@ header{
     border-style:solid;
     background-color:white;
     border-color:transparent;
-    border-radius: 5%;
     max-height: 146px;
     max-width: 369px;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows:1fr 1fr 1fr;
     cursor:pointer;
-    margin-right:0px;
+    margin-right:20px;
     margin-left:20px;
     margin-bottom:20px;
-
+    position:relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
    }
 
 .hotelimg{
     width:250.33px;
     height:124px;
     object-fit: cover;
-    border-radius: 7%;
+    border-radius: 20px;
   
 }
 
 .bigbox{
- display:grid;
- grid-template-columns:3fr 2fr;
- border-spacing:40px;
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    border-spacing:40px;
 }
 
 .box2{
@@ -115,8 +120,7 @@ header{
     width:123px;
     height:146px;
     object-fit: cover;
-    border-top-right-radius: 7%;
-    border-top-left-radius: 7%;
+    border-radius: 20px;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:1;
@@ -180,36 +184,36 @@ h3{
 
 .btn{
     border-radius:50%;
-    background-color:lightblue;
     padding:10px;
     margin-left:20px;
     width: 16px;
     height: 16px;
+    color:#0065FC;
 
 }
 
 .btnfiltre{
-    border-style:solid;
+    border-style:groove;
     display:inline;
     border-radius:50px;
-    border-left: none;
     padding-top:9px;
     padding-bottom:9px;
     margin-right:20px;
     border-color:grey;
-    border-width: 1px;
+    border-width: 2px;
     cursor:pointer;
-    border-left:0;
+    border-left:2px;
+    margin-left:2px;
 }
 
 .btnfiltre:hover{
-    border-color:blue;
+    border-color:#0065FC;
     background-color:lightblue;
     transition-duration: 1s;
 }
 
 .btn{
-    margin-left:0;
+    margin-left:0px;
 }
 
 .filtre_ecriture{
@@ -218,7 +222,7 @@ h3{
 }
 
 button{
-    background-color: #1e8fe6;
+    background-color: #0065FC;
     width:120px;
     height:40px;
     border-top-right-radius: 12px;
@@ -226,19 +230,18 @@ button{
     border-style:none;
     margin-left:0;
     border-left-width:20px;
-    cursor:pointer;
-    
+    cursor:pointer;    
 }
 
 
 .searchInput{
-width:200px;
-height:40px;
-margin-right:0;
-border-style: groove;
-border-color:lightgrey;
-border-right-color:#1e8fe6;
-margin:0;
+    width:200px;
+    height:40px;
+    margin-right:0;
+    border-style: groove;
+    border-color:lightgrey;
+    border-right-color:#0065FC;
+    margin:0;
 }
 
 .SearchTextBtn{
@@ -253,22 +256,27 @@ margin:0;
 }
 
 .box3{
-    display:inline-block;
+    display:grid;
+    padding-bottom:30px;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
 .boxbox3{
     display:grid;
     grid-template-rows:380px;
-    float:left;
-    
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
     margin:30px;
 }
 
 .ActivityImg{
-width:297.5px;
-height:380px;
-object-fit: cover;
-border-style: hidden;
+    width:297.5px;
+    height:380px;
+    object-fit: cover;
+    border-style: hidden;
     border-color:rgb(255, 255, 255);
     border-radius:20px 20px 0px 0px;
 }
@@ -293,3 +301,36 @@ border-style: hidden;
     grid-column-start:3;
     list-style: none;
 }
+
+.star{
+    color:#0065FC;
+}
+
+.searchlogo{
+    color:black;
+}
+
+.box2_hotel_prix{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+}
+
+.stars2{
+    position:absolute;
+    bottom:0;
+}
+
+.plus{
+    cursor:pointer;
+}
+
+
+@media (max-width: 1440px){
+
+    body{    margin-right:auto;
+        margin-left:auto;
+    width:924px}
+}
+
+
