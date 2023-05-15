@@ -1,1 +1,1 @@
-Projet 02 du parcours Developeur web openclassroom 
+Projet 02 du parcours Dev web openclassroom 
