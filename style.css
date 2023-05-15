@@ -81,7 +81,6 @@ header{
     margin-left:20px;
     margin-bottom:20px;
     position:relative;
-    background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -113,7 +112,7 @@ header{
     padding-left:20px;
     padding-right:20px;
     height:614px;
-    width:492px;
+    width:429px;
 }
 
 .hotelimg2{
@@ -162,8 +161,7 @@ h3{
     padding-top:5px;
 }
 
-.filtresboutons{
-   
+.filtresboutons{  
     border-left: 0;
     display:inline-block;
     margin-top:20px;
@@ -171,9 +169,7 @@ h3{
     padding-right:20px;
     padding-top:5px;
     padding-left:15px;
-    padding-bottom:5px;
-    
-    
+    padding-bottom:5px;    
 }
 
 .infos{
@@ -313,7 +309,6 @@ button{
 .box2_hotel_prix{
     grid-column-start: 2;
     grid-row-start: 1;
-
 }
 
 .stars2{
@@ -328,42 +323,86 @@ button{
 
 @media (max-width: 1440px){
 
-    body{    margin-right:auto;
+    body{    
+        margin-right:auto;
         margin-left:auto;
-    width:924px}
+        width:1024px
+    }
 
-.bigbox{
-    display:flex;
-    flex-direction: column;
-}
-.box2{
+    .bigbox{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .box1{
+    width:924px;
+    }
+    .box2{
     margin-top: 30px;
     display:grid;
     grid-template-rows:70px 4fr;
     width:924px;
     height:252px;
     margin-left:0px;
-}
-.populaires_3box{
-display:grid;
-grid-template-columns:308px 308px 308px;
-}
-.boxbox2{
+    }
+
+    .box3{
+    margin-right:0px;
+    margin-left:0px;
+    border-spacing:30px;
+    }
+    .populaires_3box{
+    display:grid;
+    grid-template-columns:308px 308px 308px;
+    }
+    .boxbox2{
     width:274px;
     height:146px;
-}
-.boxbox{
+    }
+    .boxbox{
     width:268px;
     height:207,25px;
-}
+    }
 
-.ActivityImg{
+    .ActivityImg{
     width:200px;
     height:270px;
-}
+    }
 
-.boxbox3{
+    .boxbox3{
     height:340px;
     grid-template-rows:270px;
+    margin-right:0px;
+    width:200px;
+    }
+
 }
+
+@media (max-width:1023px){
+    
+    body{
+    width:375px
+    }
+
+    .bigbox{
+        display:flex;
+        flex-direction: column-reverse;
+        width:auto;
+        height:auto;
+    }
+
+    .box2{
+        display:flex;
+        flex-direction: column;
+        
+        width:auto;
+        height:auto;
+    }
+    .box1{
+        display:flex;
+        flex-direction : column;
+        width:auto;
+        height:auto;
+    }
+
 }
