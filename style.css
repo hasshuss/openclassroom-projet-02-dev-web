@@ -1,7 +1,7 @@
 body{
     padding:1em;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: auto;
+    padding-right: auto;
     font-family: 'Roboto', sans-serif;
     max-width:1440px;
     margin-right:auto;
@@ -23,7 +23,7 @@ header{
     padding: 10px 10px 10px 10px;
     }
 
-.tamer{
+.logo{
     width: 100px;
     height: auto;
 }
@@ -36,10 +36,10 @@ header{
     background-color:#cccaca52;
     border-color:transparent;
     border-radius: 2%;
-    padding-left:20px;
-    padding-right:20px;
-    height: 614px;
-    width:871px;
+    padding-left:1.5%;
+    padding-right:1.5%;
+    max-height: 614px;
+    max-width:871px;
 }
 
 .titre{
@@ -87,17 +87,16 @@ header{
    }
 
 .hotelimg{
-    width:250.33px;
-    height:124px;
+    width:100%;
+    height:100%;
     object-fit: cover;
     border-radius: 20px;
   
 }
 
 .bigbox{
-    display:grid;
-    grid-template-columns:3fr 2fr;
-    border-spacing:40px;
+    display:flex;
+    flex-direction: row;
 }
 
 .box2{
@@ -108,9 +107,8 @@ header{
     border-radius: 2%;
     grid-column-start:2;
     grid-row-start:1;
-    margin-left:40px;
-    padding-left:20px;
-    padding-right:20px;
+    margin-left:2%;
+    padding:auto;
     height:614px;
     width:429px;
 }
@@ -259,18 +257,20 @@ button{
 }
 
 .boxbox3{
-    display:grid;
-    grid-template-rows:380px;
+    display:flex;
+    flex-direction: column;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    margin:30px;
+    margin:20px;
 }
 
+
+
 .ActivityImg{
-    width:297.5px;
-    height:380px;
+    width:100%;
+    height:100%;
     object-fit: cover;
     border-style: hidden;
     border-color:rgb(255, 255, 255);
@@ -320,8 +320,12 @@ button{
     cursor:pointer;
 }
 
+.populaires h2{
+    margin-left:20px;
+}
 
-@media (max-width: 1440px){
+
+@media (max-width: 1024px){
 
     body{    
         margin-right:auto;
@@ -351,6 +355,8 @@ button{
     margin-left:0px;
     border-spacing:30px;
     }
+
+    
     .populaires_3box{
     display:grid;
     grid-template-columns:308px 308px 308px;
@@ -378,7 +384,7 @@ button{
 
 }
 
-@media (max-width:1023px){
+@media (max-width:768px){
     
     body{
     width:375px
