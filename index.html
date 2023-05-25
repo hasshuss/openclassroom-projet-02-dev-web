@@ -15,10 +15,10 @@
         <img src="images/Booki@3x.png" alt="Reservia - Reservation hotel en ligne" class="logo">
 
     <nav>
-        <ul class="navul">
-            <li class="headlink"><a href="#">Hébergement</a></li>
-            <li class="headlink"><a href="#">Activités</a></li>
-        </ul>
+        <div class="navul">
+            <div class="hoverlink"><div class="headlink"><a href="#AncreMarseille">Hébergement</a></div></div>
+            <div class="hoverlink"><div class="headlink"><a href="#AncreActivite">Activités</a></div></div>
+        </div>
     </nav>
 </header>
 <main>
@@ -29,16 +29,16 @@
 </button>
 </div>
 <div class="filtres">
-<span class="filtre_ecriture">Filtres</span>
-<div class ="btnfiltre"><i class="btn fa-solid fa-money-bill-wave"></i><div class="filtresboutons"> Economique</div></div>
-<div class ="btnfiltre"><i class="btn fa-solid fa-child-reaching"></i><div class="filtresboutons"> Familial</div></div>
-<div class ="btnfiltre"><i class="btn fa-solid fa-heart"></i><div class="filtresboutons"> Romantique</div></div>
-<div class ="btnfiltre"><i class="btn fa-solid fa-dog"></i><div class="filtresboutons"> Nos pépites</div></div>
+<span class="filtre_ecriture"><strong>Filtres</strong></span>
+<div class ="btnfiltre"><i class="btn fa-solid fa-money-bill-wave"></i><div class="filtresboutons"><strong>Economique</strong></div></div>
+<div class ="btnfiltre"><i class="btn fa-solid fa-child-reaching"></i><div class="filtresboutons"><strong>Familial</strong></div></div>
+<div class ="btnfiltre"><i class="btn fa-solid fa-heart"></i><div class="filtresboutons"><strong>Romantique</strong></div></div>
+<div class ="btnfiltre"><i class="btn fa-solid fa-dog"></i><div class="filtresboutons"><strong>Nos pépites</strong></div></div>
 </div>
 <div class="infos"><div class="cercle"><i class="fa-solid fa-info"></i></div><span class="textinfos">Plus de 500 logements sont disponibles dans cette ville</span></div>
 <div class="bigbox">
 <article class="box1">
-    <div class="titre"><h2>Hebergements à Marseille</h2></div>
+    <div id="AncreMarseille" class="titre"><h2>Hebergements à Marseille</h2></div>
 
     <div class="boxbox">
         <img src="images/1.jpg" alt="Hôtel du port" class="hotelimg">
@@ -121,49 +121,53 @@
     <img src="images/7.jpg" alt="Auberge la cannebière" class="hotelimg2">
     <div class="box2_hotel_prix">
     <h3>Hôtel le soleil du matin</h3>
-    <p><br>Nuit à partir de 128€</p></div>
+    <p><br>Nuit à partir de 128€</p>
     <div class="stars2">
+        <br>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
     </div>
+</div>
 </article>
 <article class="boxbox2">
     <img src="images/8.jpg" alt="Auberge la cannebière" class="hotelimg2">
     <div class="box2_hotel_prix">
     <h3>Chambres d'hôtes Au coeur de l'eau</h3>
-    <p><br>Nuit à partir de 25€</p></div>
+    <p><br>Nuit à partir de 25€</p>
     <div class="stars2">
+        <br>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
     </div>
+</div>
 </article>
 <article class="boxbox2">
     <img src="images/9.jpg" alt="Auberge la cannebière" class="hotelimg2">
     <div class="box2_hotel_prix">
     <h3>Hôtel Bleu et Blanc</h3>
-    <p><br>Nuit à partir de <strong>25€</strong></p>
-</div>
+    <p><br>Nuit à partir de 25€</p>
     <div class="stars2">
+        <br>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
         <i class="star fa-solid fa-star"></i>
     </div>
+</div>
 </article>
 </div>
 </section>
 </div>
-<div>
-<H2>Activités à Marseille</H2>
-<aside class ="box3">
-    
+<aside>
+<H2 id="AncreActivite">Activités à Marseille</H2>
+<article class ="box3">
     <div class="boxbox3">
     <img src="images/10.jpg" alt="Vieux-port" class="ActivityImg">
     <h3>Vieux-port</h3>
@@ -180,24 +184,24 @@
     <img src="images/13.jpg" alt="Notre Dame de la Garde" class="ActivityImg">
     <h3>Notre-Dame-de-la-Garde</h3>
 </div>
+</article>
 </aside>
-</div>
 </main>
 <footer>
     <nav class="footer">
         <ul class="A_propos_footer">
-            <li class="titrefooter">A propos</li>
+            <li class="titrefooter"><strong>A propos</strong></li>
             <li class="linkfooter"><a href="#">Fonctionnement du site</a></li>
             <li class="linkfooter"><a href="#">Conditions générales</a></li>
             <li class="linkfooter"><a href="#">Données et confidentialité</a></li>
         </ul>
         <ul class="Hebergements_footer">
-            <li class="titrefooter">Nos hébégerments</li>
+            <li class="titrefooter"><strong>Nos hébégerments</strong></li>
             <li class="linkfooter"><a href="#">Charte qualité</a></li>
             <li class="linkfooter"><a href="#">Proposez votre hôtel</a></li>
         </ul>    
         <ul class="Assistance_footer">
-            <li class="titrefooter">Assistance</li>
+            <li class="titrefooter"><strong>Assistance</strong></li>
             <li class="linkfooter"><a href="#">Centre d'aide</a></li>
             <li class="linkfooter"><a href="#">Nous contacter</a></li>
     </ul> 
