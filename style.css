@@ -1,33 +1,71 @@
 body{
-    padding:1em;
-    padding-left: auto;
-    padding-right: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     max-width:1440px;
     margin-right:auto;
     margin-left:auto;
-    font-size:80%;
+    font-size:85%;
+    margin-top:0;
+    padding-top:0;
+    padding-left:50px;
+    padding-right:50px;
+}
+main{
+    margin:10px;
 }
 
 .headlink{
     margin-top:0px;
     padding-top:0px;
-    border-top: 2px;
+    border-top: 1px;
     border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
     border-style: groove;
     border-color: transparent;
     border-spacing: 200px;
+    font-size:120%;
+    color : #0065FC;
 }
-    .headlink:hover {
-        border-top: 2px solid #0065FC;
-        border-bottom-width: 0;
-        border-left-width: 0;
-        border-right-width: 0;
-        cursor: pointer;
-        border-style: groove;
-    }
+
+.headlink a:visited {
+    color:#0065FC;
+    text-decoration: none;
+}
+
+.linkfooter a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.headlink a{
+    color:#0065FC;
+    text-decoration: none;
+    margin-top:16px !important;
+}
+
+.linkfooter a{
+    color: black;
+    text-decoration: none;
+}
+
+.hoverlink{
+    border-top-width: 1px;
+    border-bottom-width: 0 ;
+    border-left-width: 0 ;
+    border-right-width: 0 ;
+    border-color:transparent;
+    cursor: pointer ;
+    border-style: groove;
+}
+
+.hoverlink:hover {
+        border-top-width: 1px !important;
+        border-bottom-width: 0 !important;
+        border-left-width: 0 !important;
+        border-right-width: 0 !important;
+        border-color: #0065FC !important;
+        cursor: pointer !important;
+}
 
 
 
@@ -42,12 +80,13 @@ body{
 header{
     display: grid;
     grid-template-columns: 10fr 1fr;
-    padding: 10px 10px 10px 10px;
-    }
+    padding: 0 10px 10px 10px;
+}
 
 .logo{
     width: 100px;
     height: auto;
+    margin-top:30px;
 }
 
 .box1{
@@ -61,7 +100,7 @@ header{
     padding-left:1.5%;
     padding-right:1.5%;
     max-height: 614px;
-    max-width:871px;
+    width:66%;
 }
 
 .titre{
@@ -78,7 +117,7 @@ header{
     background-color:white;
     border-color:transparent;
     max-height: 200px;
-    max-width: 250.33px;
+    width: 90%;
     display:grid;
     grid-template-rows:130px 0.1fr 0.1fr 0.1fr;
     cursor:pointer;
@@ -94,7 +133,7 @@ header{
     background-color:white;
     border-color:transparent;
     max-height: 146px;
-    max-width: 369px;
+    width: 85%;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows:1fr 1fr 1fr;
@@ -112,14 +151,42 @@ header{
     width:100%;
     height:100%;
     object-fit: cover;
-    border-radius: 20px;
-  
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.infos{
+    display:inline-flex;
+}
+
+.textinfos{
+    padding-left:5px;
+    padding-bottom:10px;
+    margin-top:3px;
+}
+
+.cercle {
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    border-radius: 50%;
+    border-color:#0065FC;
+    border-width: 1px;
+  }
+
+.infos i{
+    color:#0065FC;
 }
 
 .bigbox{
     display:flex;
     flex-direction: row;
-    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    margin-top: 10px;
 }
 
 .box2{
@@ -131,16 +198,28 @@ header{
     grid-column-start:2;
     grid-row-start:1;
     margin-left:2%;
-    padding:auto;
     height:614px;
-    width:429px;
+    width:33%
+}
+
+.box2_hotel_prix{
+    padding-left:10px;
+}
+
+.stars2{
+    padding-left:10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    display:table-row
 }
 
 .hotelimg2{
-    width:123px;
+    width:100%;
     height:146px;
     object-fit: cover;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:1;
@@ -152,9 +231,16 @@ h3{
     margin-block-end: 0;   
 }
 
+.boxbox h3,p{
+    margin-left:5px;
+    margin-top:5px;
+}
+
 .stars{
     display:inline;
     margin-block-start: 3px;
+    margin-top:10px;
+    margin-left:5px;
 }
 
 .stars2{
@@ -166,6 +252,7 @@ h3{
 .boxbox2 h3{
     display:inline;
     grid-column-start:2;
+    margin-top:10px;
 }
 
 .box1 h3{
@@ -189,15 +276,11 @@ h3{
     margin-bottom:20px;
     padding-right:20px;
     padding-top:5px;
-    padding-left:15px;
+    padding-left:0;
     padding-bottom:5px;    
 }
 
-.infos{
-    display:inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 
 .btn{
     border-radius:50%;
@@ -217,14 +300,15 @@ h3{
     padding-bottom:9px;
     margin-right:20px;
     border-color:grey;
-    border-width: 2px;
+    border-width: 1px;
     cursor:pointer;
     margin-left:2px;
+    white-space: nowrap;
 }
 
 .btnfiltre:hover{
     border-color:#0065FC;
-    background-color:lightblue;
+    background-color: #DEEBFF;
     transition-duration: 1s;
 }
 
@@ -265,10 +349,19 @@ button{
     font-weight: 900;
 }
 
+.searchbar{
+    display:flex;
+    flex-direction: row;
+}
+
 .searchbar i{
     border-style: none;
     padding:12px;
     background-color: lightgrey;
+    height:15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+
 }
 
 .box3{
@@ -301,7 +394,7 @@ button{
 
 .footer{
     display:grid;
-    background-color:lightgrey;
+    background-color:#F2F2F2;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -352,12 +445,10 @@ button{
     body{    
         margin-right:auto;
         margin-left:auto;
-        max-width:1024px;
+        width:90%;
     }
 
-    .boxbox2{
-        margin:10px;
-    }
+
 
     .bigbox{
         display:flex;
@@ -388,6 +479,12 @@ button{
 
     .box1{
         justify-self: center;
+        width:96%;
+    }
+
+    .hotelimg2{
+        width:100%;
+
     }
 
 
@@ -397,29 +494,73 @@ button{
 @media (max-width:768px){
     
     body{
-    max-width:500px;
+    max-width:768px;
+    width:100%;
         display:flex;
         flex-direction: column;
+        margin:auto;
+        padding:0;
+        margin:0;
     }
+
+    main{
+        padding:0;
+        margin:0;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+    }       
+
+    .navul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        font-size: 16px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right:40px;
+    }
+
+    
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
 
     .bigbox{
         display:flex;
         flex-direction: column-reverse;
         width:auto;
         height:auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .box2{
         display:flex;
         flex-direction: column;
-        width:auto;
+        max-width:768px;
         height:auto;
+        margin:0px;
+        border-radius:0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .box1{
         display:flex;
         flex-direction : column;
-        width:auto;
         max-height:2000px;
+        margin-top:20px;
+        border-radius:0;
+        background-color: white;
+        
     }
 
   
@@ -433,10 +574,35 @@ button{
             flex-direction:column;
         }
 
+        .boxbox2{
+            margin:auto;
+            margin:auto;
+            max-width:700px;
+            margin-bottom:20px;
+        }
+
         .main{
             display:flex;
             flex-direction:column;
         }
 
-        
+        .ActivityImg{
+            max-height:190px;
+        }
+
+        .box3{
+            max-height:2000px;
+        }
+
+        body{
+            display:flex;
+            flex-direction: column;
+        }
+     
+       
+
+        nav.footer{
+            display:flex;
+            flex-direction: column;
+        }
 }
