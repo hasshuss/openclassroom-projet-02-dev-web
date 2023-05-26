@@ -13,6 +13,10 @@ main{
     margin:10px;
 }
 
+.searchbar .searchmobile{
+    display:none;
+}
+
 .headlink{
     margin-top:0px;
     padding-top:0px;
@@ -59,12 +63,12 @@ main{
 }
 
 .hoverlink:hover {
-        border-top-width: 1px !important;
-        border-bottom-width: 0 !important;
-        border-left-width: 0 !important;
-        border-right-width: 0 !important;
-        border-color: #0065FC !important;
-        cursor: pointer !important;
+        border-top-width: 1px ;
+        border-bottom-width: 0 ;
+        border-left-width: 0 ;
+        border-right-width: 0 ;
+        border-color: #0065FC ;
+        cursor: pointer ;
 }
 
 
@@ -324,7 +328,7 @@ h3{
 button{
     background-color: #0065FC;
     width:120px;
-    height:40px;
+    height:39px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border-style:none;
@@ -336,12 +340,13 @@ button{
 
 .searchInput{
     width:200px;
-    height:40px;
+    height:39px;
     margin-right:0;
     border-style: groove;
     border-color:lightgrey;
     border-right-color:#0065FC;
     margin:0;
+    border-width: 1px;
 }
 
 .SearchTextBtn{
@@ -605,4 +610,72 @@ button{
             display:flex;
             flex-direction: column;
         }
-}
+
+        .searchButton{
+            display:none;
+        }
+
+        .searchbar .searchmobile{
+            background-color: #0065FC;
+            color: white;
+            display:block;
+            border-top-right-radius:15px;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            padding-left:-20px;
+
+        }
+
+      .hoverlink:hover{
+        border-top-width: 0px ;
+        border-bottom-width: 0px ;
+      }
+
+      
+      .navul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        padding-bottom: 0px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        margin-bottom: 0px; /* Ajoutez l'espace souhaité ici */
+        position: relative;
+      }
+      
+      .navul::before {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 50%;
+        height: 1px;
+        background-color: blue;
+        transform: translateY(-50%);
+      }
+      
+      .navul::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        width: 50%;
+        height: 1px;
+        background-color: gray;
+        transform: translateY(-50%);
+      }
+
+      .hoverlink{
+        margin-bottom: 20px;
+      }
+
+      main{
+        margin-top:0px
+      }
+    }
+
+     
+
