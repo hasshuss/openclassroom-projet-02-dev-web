@@ -117,6 +117,7 @@ header{
 
 .boxbox{
     border-style:solid;   
+    border-width:0px;
     margin:10px;
     background-color:white;
     border-color:transparent;
@@ -130,6 +131,10 @@ header{
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
+}
+
+.box1 h2{
+    margin-bottom: 30px;
 }
 
 .boxbox2{
@@ -149,6 +154,12 @@ header{
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border-width: 0px;
+   }
+
+   #AncreActivite{
+    padding-left: 30px;
+    padding-top:30px;
    }
 
 .hotelimg{
@@ -185,6 +196,11 @@ header{
     color:#0065FC;
 }
 
+.populaires h2{
+    margin:0;
+    padding:0;
+}
+
 .bigbox{
     display:flex;
     flex-direction: row;
@@ -210,10 +226,14 @@ header{
     padding-left:10px;
 }
 
+#g{
+    color:#F2F2F2
+}
+
 .stars2{
     padding-left:10px;
     position:absolute;
-    bottom:0;
+    margin-bottom: 10px;
     left:0;
     display:table-row
 }
@@ -440,8 +460,21 @@ button{
     cursor:pointer;
 }
 
-.populaires h2{
+
+.populaires{
+    display:inline-flex;
+    justify-content: space-between;
+    margin-right: 20px;
     margin-left:20px;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+#graph{
+    color:#0065FC;
+    width:18px;
+    margin-top:5px;
+
 }
 
 
