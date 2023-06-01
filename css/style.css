@@ -110,7 +110,7 @@ font-size:18px;
 
 p{
   font-weight:400;
-  font-size:14px;
+  font-size:16px;
 }
 
 .intro {
@@ -148,13 +148,9 @@ main {
   border-color: transparent;
   border-spacing: 200px;
   font-size: 120%;
-  color: #0065fc;
 }
 
-.headlink a:visited {
-  color: #0065fc;
-  text-decoration: none;
-}
+
 
 .linkfooter a:visited {
   color: black;
@@ -162,9 +158,9 @@ main {
 }
 
 .headlink a {
-  color: #0065fc;
   text-decoration: none;
   margin-top: 16px !important;
+  color:black;
 }
 
 .linkfooter a {
@@ -188,15 +184,27 @@ main {
   border-left-width: 0;
   border-right-width: 0;
   border-color: #0065fc;
+  color:#0065fc;
   cursor: pointer;
+}
+.navul:hover{
+  color:#0065fc;
+}
+
+.headlink a:hover{
+  color:#0065fc
 }
 
 .navul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  color: #0065fc;
   column-gap: 2em;
+  color:black;
+}
+
+.nav:hover{
+  color:#0065fc
 }
 
 header {
@@ -307,7 +315,7 @@ header {
   align-items: center;
   border-style: groove;
   border-radius: 50%;
-  border-color: #0065fc;
+  border-color: #D9D9D9;
   border-width: 1px;
 }
 
@@ -319,8 +327,6 @@ header {
   margin: 0;
   padding: 0;
 }
-
-
 
 .bigbox {
   display: flex;
@@ -350,8 +356,6 @@ header {
 i.star.fa-solid.fa-star.g {
   color: #f2f2f2;
 }
-
-
 
 .hotelimg2 {
   width: 100%;
@@ -452,7 +456,7 @@ p {
 }
 
 .btnfiltre:hover {
-  border-color: #0065fc;
+  
   background-color: #deebff;
   transition-duration: 1s;
 }
@@ -482,10 +486,18 @@ button {
   height: 39px;
   margin-right: 0;
   border-style: groove;
-  border-color: lightgrey;
+  border-color: #deebff;
   border-right-color: #0065fc;
   margin: 0;
   border-width: 1px;
+  font-weight:700;
+  font-size:18px;
+  text-align: center;
+}
+
+.searchInput::placeholder {
+  color: black;
+
 }
 
 .SearchTextBtn {
@@ -502,7 +514,7 @@ button {
 .searchbar i {
   border-style: none;
   padding: 12px;
-  background-color: lightgrey;
+  background-color: #f2f2f2;
   height: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -560,6 +572,7 @@ button {
   display: grid;
   background-color: #f2f2f2;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom:15px
 }
 
 .A_propos_footer {
@@ -668,6 +681,14 @@ h1 {
     margin: 0;
   }
 
+  .filtresboutons{
+    font-size:14px;
+  }
+
+ .filtre_ecriture{
+  display:block;
+margin-top: 20px; }
+
   .intro {
     padding-left: 20px;
   }
@@ -740,18 +761,26 @@ h1 {
     flex-direction: column;
   }
 
+  .boxbox3 {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+  }
+
   .boxbox2 {
-    margin: auto;
     margin: auto;
     max-width: 700px;
     margin-bottom: 20px;
+    
   }
 
   .boxbox {
     margin: auto;
-    margin: auto;
     max-width: 700px;
     margin-bottom: 20px;
+    
   }
 
   .main {
@@ -808,6 +837,8 @@ h1 {
     border-right: 0;
     margin-bottom: 0px;
     position: relative;
+    margin-right: auto;
+    margin-left:auto;
   }
 
   .navul::before {
